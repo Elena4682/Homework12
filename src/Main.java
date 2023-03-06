@@ -15,5 +15,21 @@ public class Main {
         book1.setYear(1863);
         System.out.println("Название:" + book1.getTitle()+ " Автор:" + book1.getAuthor().getName()+ " "
                 + book1.getAuthor().getSurname() + " Год:" + book1.getYear());
+
+        System.out.println(book1);
+        System.out.println(author1);
+
+        if (author1 == author2) {
+            System.out.println(" Книги равны");
+        }else {
+            System.out.println(" Книги не равны");
+            }
+        if (book1 == book2) {
+            System.out.println(" Книги равны");
+        }else {
+            System.out.println(" Книги не равны");
+        }
+        System.out.println(author1.hashCode());
+        System.out.println(author2.hashCode());
     }
 }
